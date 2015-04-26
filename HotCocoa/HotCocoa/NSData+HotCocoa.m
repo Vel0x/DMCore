@@ -8,13 +8,15 @@
 
 #import "NSData+HotCocoa.h"
 #import "NSException+HotCocoa.h"
+#import <CommonCrypto/CommonDigest.h>
 
 @implementation NSData (HotCocoa)
 
 - (NSData*)md5Hash
 {
-    [NSException raiseUnimplementedMethod];
-    return nil;
+    unsigned char digest[CC_MD5_DIGEST_LENGTH];
+    CC_MD5([self bytes], (CC_LONG)[self length], digest);
+    return [NSData dataWithBytes:digest length:CC_MD5_DIGEST_LENGTH];
 }
 
 - (NSString*)md5HashHexString
@@ -24,8 +26,9 @@
 
 - (NSData*)sha1Hash
 {
-    [NSException raiseUnimplementedMethod];
-    return nil;
+    unsigned char digest[CC_SHA1_DIGEST_LENGTH];
+    CC_SHA1([self bytes], (CC_LONG)[self length], digest);
+    return [NSData dataWithBytes:digest length:CC_SHA1_DIGEST_LENGTH];
 }
 
 - (NSString*)sha1HashHexString
@@ -35,8 +38,9 @@
 
 - (NSData*)sha256Hash
 {
-    [NSException raiseUnimplementedMethod];
-    return nil;
+    unsigned char digest[CC_SHA256_DIGEST_LENGTH];
+    CC_SHA256([self bytes], (CC_LONG)[self length], digest);
+    return [NSData dataWithBytes:digest length:CC_SHA256_DIGEST_LENGTH];
 }
 
 - (NSString*)sha256HashHexString
@@ -46,24 +50,14 @@
 
 - (NSData*)sha512Hash
 {
-    [NSException raiseUnimplementedMethod];
-    return nil;
+    unsigned char digest[CC_SHA512_DIGEST_LENGTH];
+    CC_SHA512([self bytes], (CC_LONG)[self length], digest);
+    return [NSData dataWithBytes:digest length:CC_SHA512_DIGEST_LENGTH];
 }
 
 - (NSString*)sha512HashHexString
 {
     return [[self sha512Hash] hexStringUpper];
-}
-
-- (NSData*)sha3Hash
-{
-    [NSException raiseUnimplementedMethod];
-    return nil;
-}
-
-- (NSString*)sha3HashHexString
-{
-    return [[self sha3Hash] hexStringUpper];
 }
 
 - (NSString*)hexStringLower
@@ -78,8 +72,21 @@
 
 - (NSData*)randomDataWithLength:(int)length
 {
-    [NSException raiseUnimplementedMethod];
-    return nil;
+    unsigned char *randomData = malloc(length * sizeof(char));
+    
+    if(!randomData)
+    {
+        return nil;
+    }
+    
+    arc4random_buf(randomData, length);
+    
+    if(length <= 0)
+    {
+        return nil;
+    }
+
+    return [NSData dataWithBytes:randomData length:length];
 }
 
 
@@ -91,6 +98,8 @@
     long bufferLength = ([self length] * 2) + 1;
     char *hexStringBuffer = malloc(bufferLength * sizeof(char));
     const unsigned char *data = [self bytes];
+    
+    hexStringBuffer[bufferLength - 1] = '\0';
     
     if([self length] == 0)
     {
@@ -108,7 +117,7 @@
         char upper = '\0';
         
         lower = data[i] & 0x0F;
-        upper = data[i] & 0xF0;
+        upper = (data[i] >> 4) & 0x0F;
         
         hexStringBuffer[i*2] = alphabet[upper];
         hexStringBuffer[i*2 + 1] = alphabet[lower];

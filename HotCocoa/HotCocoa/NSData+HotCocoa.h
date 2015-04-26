@@ -67,20 +67,6 @@
 - (NSString*)sha512HashHexString;
 
 /**
- *	@brief  Calculates the SHA-3 hash of the data
- *
- *	@return The SHA-3 hash of the data
- */
-- (NSData*)sha3Hash;
-
-/**
- *	@brief  Calculates the SHA-3 hash of the data as a hex string
- *
- *	@return The SHA-3 hash of the data as a hex string
- */
-- (NSString*)sha3HashHexString;
-
-/**
  *	@brief  Converts the data to a lower case hex string
  *
  *	@return A lower case hex string representation of the data
