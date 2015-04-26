@@ -13,6 +13,9 @@
 + (void)raiseUnimplementedMethod
 {
     NSArray *callStack = [NSThread callStackSymbols];
+    NSString *method;
+    NSRange dashPosition;
+    NSRange closingBracketPosition;
     
     if([callStack count] < 2)
     {
@@ -20,29 +23,27 @@
         return;
     }
     
-    NSString *method = callStack[1];
+    method = callStack[1];
     
-    NSRange dashPositionRange = [method rangeOfString:@"-" options:NSBackwardsSearch];
-    long dashPosition = dashPositionRange.location;
+    dashPosition = [method rangeOfString:@"-" options:NSBackwardsSearch];
     
-    if(dashPosition == NSNotFound)
+    if(dashPosition.location == NSNotFound)
     {
         [NSException raiseUnimplementedMethodWithName:[method UTF8String]];
         return;
     }
     
-    method = [method substringFromIndex:dashPosition + 1];
+    method = [method substringFromIndex:dashPosition.location + 1];
     
-    NSRange closingBracketRange = [method rangeOfString:@"]" options:NSBackwardsSearch];
-    long closingBracketPosition = closingBracketRange.location;
+    closingBracketPosition = [method rangeOfString:@"]" options:NSBackwardsSearch];
     
-    if(closingBracketPosition == NSNotFound)
+    if(closingBracketPosition.location == NSNotFound)
     {
         [NSException raiseUnimplementedMethodWithName:[method UTF8String]];
         return;
     }
     
-    method = [method substringToIndex:closingBracketPosition + 1];
+    method = [method substringToIndex:closingBracketPosition.location + 1];
     
     [NSException raiseUnimplementedMethodWithName:[method UTF8String]];
 }
