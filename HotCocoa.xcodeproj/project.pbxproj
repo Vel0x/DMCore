@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF574C991AEC780B00B506BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF574C981AEC780B00B506BF /* main.m */; };
+		CF574C9C1AEC780B00B506BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF574C9B1AEC780B00B506BF /* AppDelegate.m */; };
+		CF574CA21AEC780B00B506BF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF574CA11AEC780B00B506BF /* ViewController.m */; };
+		CF574CA51AEC780B00B506BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF574CA31AEC780B00B506BF /* Main.storyboard */; };
+		CF574CA71AEC780B00B506BF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF574CA61AEC780B00B506BF /* Images.xcassets */; };
+		CF574CAA1AEC780B00B506BF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF574CA81AEC780B00B506BF /* LaunchScreen.xib */; };
+		CF574CB61AEC780B00B506BF /* HotCocoaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF574CB51AEC780B00B506BF /* HotCocoaTests.m */; };
+		CF574CC11AEC786800B506BF /* UIView+HotCocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = CF574CC01AEC786800B506BF /* UIView+HotCocoa.m */; };
+		CF574CC51AEC7AD800B506BF /* NSArray+HotCocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = CF574CC41AEC7AD800B506BF /* NSArray+HotCocoa.m */; };
+		CF574CC91AEC81BF00B506BF /* NSDictionary+HotCocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = CF574CC81AEC81BF00B506BF /* NSDictionary+HotCocoa.m */; };
+		CF574CCC1AEC831200B506BF /* NSURL+HotCocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = CF574CCB1AEC831200B506BF /* NSURL+HotCocoa.m */; };
+		CF574CCF1AEC84B300B506BF /* NSString+HotCocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = CF574CCE1AEC84B300B506BF /* NSString+HotCocoa.m */; };
+		CF574CD21AEC854600B506BF /* NSData+HotCocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = CF574CD11AEC854600B506BF /* NSData+HotCocoa.m */; };
+		CF574CD51AEC8BA600B506BF /* NSException+HotCocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = CF574CD41AEC8BA600B506BF /* NSException+HotCocoa.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF574CB01AEC780B00B506BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF574C8B1AEC780B00B506BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF574C921AEC780B00B506BF;
+			remoteInfo = HotCocoa;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF574C931AEC780B00B506BF /* HotCocoa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotCocoa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF574C971AEC780B00B506BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF574C981AEC780B00B506BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF574C9A1AEC780B00B506BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CF574C9B1AEC780B00B506BF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CF574CA01AEC780B00B506BF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CF574CA11AEC780B00B506BF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CF574CA41AEC780B00B506BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF574CA61AEC780B00B506BF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CF574CA91AEC780B00B506BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CF574CAF1AEC780B00B506BF /* HotCocoaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HotCocoaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF574CB41AEC780B00B506BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF574CB51AEC780B00B506BF /* HotCocoaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HotCocoaTests.m; sourceTree = "<group>"; };
+		CF574CBF1AEC786800B506BF /* UIView+HotCocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+HotCocoa.h"; path = "HotCocoa/UIView+HotCocoa.h"; sourceTree = "<group>"; };
+		CF574CC01AEC786800B506BF /* UIView+HotCocoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+HotCocoa.m"; path = "HotCocoa/UIView+HotCocoa.m"; sourceTree = "<group>"; };
+		CF574CC31AEC7AD800B506BF /* NSArray+HotCocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+HotCocoa.h"; path = "HotCocoa/NSArray+HotCocoa.h"; sourceTree = "<group>"; };
+		CF574CC41AEC7AD800B506BF /* NSArray+HotCocoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+HotCocoa.m"; path = "HotCocoa/NSArray+HotCocoa.m"; sourceTree = "<group>"; };
+		CF574CC61AEC7E4700B506BF /* HotCocoa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HotCocoa.h; path = HotCocoa/HotCocoa.h; sourceTree = "<group>"; };
+		CF574CC71AEC81BF00B506BF /* NSDictionary+HotCocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+HotCocoa.h"; path = "HotCocoa/NSDictionary+HotCocoa.h"; sourceTree = "<group>"; };
+		CF574CC81AEC81BF00B506BF /* NSDictionary+HotCocoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+HotCocoa.m"; path = "HotCocoa/NSDictionary+HotCocoa.m"; sourceTree = "<group>"; };
+		CF574CCA1AEC831200B506BF /* NSURL+HotCocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSURL+HotCocoa.h"; path = "HotCocoa/NSURL+HotCocoa.h"; sourceTree = "<group>"; };
+		CF574CCB1AEC831200B506BF /* NSURL+HotCocoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSURL+HotCocoa.m"; path = "HotCocoa/NSURL+HotCocoa.m"; sourceTree = "<group>"; };
+		CF574CCD1AEC84B300B506BF /* NSString+HotCocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+HotCocoa.h"; path = "HotCocoa/NSString+HotCocoa.h"; sourceTree = "<group>"; };
+		CF574CCE1AEC84B300B506BF /* NSString+HotCocoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+HotCocoa.m"; path = "HotCocoa/NSString+HotCocoa.m"; sourceTree = "<group>"; };
+		CF574CD01AEC854600B506BF /* NSData+HotCocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+HotCocoa.h"; path = "HotCocoa/NSData+HotCocoa.h"; sourceTree = "<group>"; };
+		CF574CD11AEC854600B506BF /* NSData+HotCocoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+HotCocoa.m"; path = "HotCocoa/NSData+HotCocoa.m"; sourceTree = "<group>"; };
+		CF574CD31AEC8BA600B506BF /* NSException+HotCocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSException+HotCocoa.h"; path = "HotCocoa/NSException+HotCocoa.h"; sourceTree = "<group>"; };
+		CF574CD41AEC8BA600B506BF /* NSException+HotCocoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSException+HotCocoa.m"; path = "HotCocoa/NSException+HotCocoa.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF574C901AEC780B00B506BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF574CAC1AEC780B00B506BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF574C8A1AEC780B00B506BF = {
+			isa = PBXGroup;
+			children = (
+				CF574C951AEC780B00B506BF /* HotCocoa */,
+				CF574CB21AEC780B00B506BF /* HotCocoaTests */,
+				CF574C941AEC780B00B506BF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF574C941AEC780B00B506BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF574C931AEC780B00B506BF /* HotCocoa.app */,
+				CF574CAF1AEC780B00B506BF /* HotCocoaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF574C951AEC780B00B506BF /* HotCocoa */ = {
+			isa = PBXGroup;
+			children = (
+				CF574C9A1AEC780B00B506BF /* AppDelegate.h */,
+				CF574CC21AEC7AB700B506BF /* HotCocoa */,
+				CF574C9B1AEC780B00B506BF /* AppDelegate.m */,
+				CF574CA01AEC780B00B506BF /* ViewController.h */,
+				CF574CA11AEC780B00B506BF /* ViewController.m */,
+				CF574CA31AEC780B00B506BF /* Main.storyboard */,
+				CF574CA61AEC780B00B506BF /* Images.xcassets */,
+				CF574CA81AEC780B00B506BF /* LaunchScreen.xib */,
+				CF574C961AEC780B00B506BF /* Supporting Files */,
+			);
+			path = HotCocoa;
+			sourceTree = "<group>";
+		};
+		CF574C961AEC780B00B506BF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF574C971AEC780B00B506BF /* Info.plist */,
+				CF574C981AEC780B00B506BF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF574CB21AEC780B00B506BF /* HotCocoaTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF574CB51AEC780B00B506BF /* HotCocoaTests.m */,
+				CF574CB31AEC780B00B506BF /* Supporting Files */,
+			);
+			path = HotCocoaTests;
+			sourceTree = "<group>";
+		};
+		CF574CB31AEC780B00B506BF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF574CB41AEC780B00B506BF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF574CC21AEC7AB700B506BF /* HotCocoa */ = {
+			isa = PBXGroup;
+			children = (
+				CF574CC61AEC7E4700B506BF /* HotCocoa.h */,
+				CF574CC31AEC7AD800B506BF /* NSArray+HotCocoa.h */,
+				CF574CC41AEC7AD800B506BF /* NSArray+HotCocoa.m */,
+				CF574CD01AEC854600B506BF /* NSData+HotCocoa.h */,
+				CF574CD11AEC854600B506BF /* NSData+HotCocoa.m */,
+				CF574CC71AEC81BF00B506BF /* NSDictionary+HotCocoa.h */,
+				CF574CC81AEC81BF00B506BF /* NSDictionary+HotCocoa.m */,
+				CF574CD31AEC8BA600B506BF /* NSException+HotCocoa.h */,
+				CF574CD41AEC8BA600B506BF /* NSException+HotCocoa.m */,
+				CF574CCD1AEC84B300B506BF /* NSString+HotCocoa.h */,
+				CF574CCE1AEC84B300B506BF /* NSString+HotCocoa.m */,
+				CF574CCA1AEC831200B506BF /* NSURL+HotCocoa.h */,
+				CF574CCB1AEC831200B506BF /* NSURL+HotCocoa.m */,
+				CF574CBF1AEC786800B506BF /* UIView+HotCocoa.h */,
+				CF574CC01AEC786800B506BF /* UIView+HotCocoa.m */,
+			);
+			name = HotCocoa;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF574C921AEC780B00B506BF /* HotCocoa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF574CB91AEC780B00B506BF /* Build configuration list for PBXNativeTarget "HotCocoa" */;
+			buildPhases = (
+				CF574C8F1AEC780B00B506BF /* Sources */,
+				CF574C901AEC780B00B506BF /* Frameworks */,
+				CF574C911AEC780B00B506BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HotCocoa;
+			productName = HotCocoa;
+			productReference = CF574C931AEC780B00B506BF /* HotCocoa.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF574CAE1AEC780B00B506BF /* HotCocoaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF574CBC1AEC780B00B506BF /* Build configuration list for PBXNativeTarget "HotCocoaTests" */;
+			buildPhases = (
+				CF574CAB1AEC780B00B506BF /* Sources */,
+				CF574CAC1AEC780B00B506BF /* Frameworks */,
+				CF574CAD1AEC780B00B506BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF574CB11AEC780B00B506BF /* PBXTargetDependency */,
+			);
+			name = HotCocoaTests;
+			productName = HotCocoaTests;
+			productReference = CF574CAF1AEC780B00B506BF /* HotCocoaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF574C8B1AEC780B00B506BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Dale Myers";
+				TargetAttributes = {
+					CF574C921AEC780B00B506BF = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					CF574CAE1AEC780B00B506BF = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = CF574C921AEC780B00B506BF;
+					};
+				};
+			};
+			buildConfigurationList = CF574C8E1AEC780B00B506BF /* Build configuration list for PBXProject "HotCocoa" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF574C8A1AEC780B00B506BF;
+			productRefGroup = CF574C941AEC780B00B506BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF574C921AEC780B00B506BF /* HotCocoa */,
+				CF574CAE1AEC780B00B506BF /* HotCocoaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF574C911AEC780B00B506BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF574CA51AEC780B00B506BF /* Main.storyboard in Resources */,
+				CF574CAA1AEC780B00B506BF /* LaunchScreen.xib in Resources */,
+				CF574CA71AEC780B00B506BF /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF574CAD1AEC780B00B506BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF574C8F1AEC780B00B506BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF574CC11AEC786800B506BF /* UIView+HotCocoa.m in Sources */,
+				CF574CD21AEC854600B506BF /* NSData+HotCocoa.m in Sources */,
+				CF574CCF1AEC84B300B506BF /* NSString+HotCocoa.m in Sources */,
+				CF574C9C1AEC780B00B506BF /* AppDelegate.m in Sources */,
+				CF574CA21AEC780B00B506BF /* ViewController.m in Sources */,
+				CF574C991AEC780B00B506BF /* main.m in Sources */,
+				CF574CD51AEC8BA600B506BF /* NSException+HotCocoa.m in Sources */,
+				CF574CC51AEC7AD800B506BF /* NSArray+HotCocoa.m in Sources */,
+				CF574CC91AEC81BF00B506BF /* NSDictionary+HotCocoa.m in Sources */,
+				CF574CCC1AEC831200B506BF /* NSURL+HotCocoa.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF574CAB1AEC780B00B506BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF574CB61AEC780B00B506BF /* HotCocoaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF574CB11AEC780B00B506BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF574C921AEC780B00B506BF /* HotCocoa */;
+			targetProxy = CF574CB01AEC780B00B506BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF574CA31AEC780B00B506BF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF574CA41AEC780B00B506BF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF574CA81AEC780B00B506BF /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF574CA91AEC780B00B506BF /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF574CB71AEC780B00B506BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CF574CB81AEC780B00B506BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF574CBA1AEC780B00B506BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HotCocoa/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CF574CBB1AEC780B00B506BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HotCocoa/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CF574CBD1AEC780B00B506BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HotCocoaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HotCocoa.app/HotCocoa";
+			};
+			name = Debug;
+		};
+		CF574CBE1AEC780B00B506BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HotCocoaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HotCocoa.app/HotCocoa";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF574C8E1AEC780B00B506BF /* Build configuration list for PBXProject "HotCocoa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF574CB71AEC780B00B506BF /* Debug */,
+				CF574CB81AEC780B00B506BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF574CB91AEC780B00B506BF /* Build configuration list for PBXNativeTarget "HotCocoa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF574CBA1AEC780B00B506BF /* Debug */,
+				CF574CBB1AEC780B00B506BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CF574CBC1AEC780B00B506BF /* Build configuration list for PBXNativeTarget "HotCocoaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF574CBD1AEC780B00B506BF /* Debug */,
+				CF574CBE1AEC780B00B506BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF574C8B1AEC780B00B506BF /* Project object */;
+}
