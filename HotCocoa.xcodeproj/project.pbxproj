@@ -13,7 +13,7 @@
 		CF574CA51AEC780B00B506BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF574CA31AEC780B00B506BF /* Main.storyboard */; };
 		CF574CA71AEC780B00B506BF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF574CA61AEC780B00B506BF /* Images.xcassets */; };
 		CF574CAA1AEC780B00B506BF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF574CA81AEC780B00B506BF /* LaunchScreen.xib */; };
-		CF574CB61AEC780B00B506BF /* HotCocoaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF574CB51AEC780B00B506BF /* HotCocoaTests.m */; };
+		CF574CB61AEC780B00B506BF /* NSDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF574CB51AEC780B00B506BF /* NSDataTests.m */; };
 		CF574CC11AEC786800B506BF /* UIView+HotCocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = CF574CC01AEC786800B506BF /* UIView+HotCocoa.m */; };
 		CF574CC51AEC7AD800B506BF /* NSArray+HotCocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = CF574CC41AEC7AD800B506BF /* NSArray+HotCocoa.m */; };
 		CF574CC91AEC81BF00B506BF /* NSDictionary+HotCocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = CF574CC81AEC81BF00B506BF /* NSDictionary+HotCocoa.m */; };
@@ -46,7 +46,7 @@
 		CF574CA91AEC780B00B506BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		CF574CAF1AEC780B00B506BF /* HotCocoaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HotCocoaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF574CB41AEC780B00B506BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CF574CB51AEC780B00B506BF /* HotCocoaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HotCocoaTests.m; sourceTree = "<group>"; };
+		CF574CB51AEC780B00B506BF /* NSDataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSDataTests.m; sourceTree = "<group>"; };
 		CF574CBF1AEC786800B506BF /* UIView+HotCocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+HotCocoa.h"; path = "HotCocoa/UIView+HotCocoa.h"; sourceTree = "<group>"; };
 		CF574CC01AEC786800B506BF /* UIView+HotCocoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+HotCocoa.m"; path = "HotCocoa/UIView+HotCocoa.m"; sourceTree = "<group>"; };
 		CF574CC31AEC7AD800B506BF /* NSArray+HotCocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+HotCocoa.h"; path = "HotCocoa/NSArray+HotCocoa.h"; sourceTree = "<group>"; };
@@ -128,7 +128,7 @@
 		CF574CB21AEC780B00B506BF /* HotCocoaTests */ = {
 			isa = PBXGroup;
 			children = (
-				CF574CB51AEC780B00B506BF /* HotCocoaTests.m */,
+				CF574CB51AEC780B00B506BF /* NSDataTests.m */,
 				CF574CB31AEC780B00B506BF /* Supporting Files */,
 			);
 			path = HotCocoaTests;
@@ -281,7 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF574CB61AEC780B00B506BF /* HotCocoaTests.m in Sources */,
+				CF574CB61AEC780B00B506BF /* NSDataTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,6 +464,7 @@
 				CF574CBB1AEC780B00B506BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF574CBC1AEC780B00B506BF /* Build configuration list for PBXNativeTarget "HotCocoaTests" */ = {
 			isa = XCConfigurationList;
@@ -472,6 +473,7 @@
 				CF574CBE1AEC780B00B506BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

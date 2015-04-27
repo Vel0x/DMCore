@@ -87,7 +87,7 @@
  *
  *	@return Random data of the supplied length
  */
-- (NSData*)randomDataWithLength:(int)length;
++ (NSData*)randomDataWithLength:(int)length;
 
 
 @end

@@ -70,7 +70,7 @@
     return [self hexStringWithAlphabet:"0123456789ABCDEF"];
 }
 
-- (NSData*)randomDataWithLength:(int)length
++ (NSData*)randomDataWithLength:(int)length
 {
     unsigned char *randomData = malloc(length * sizeof(char));
     
