@@ -34,10 +34,4 @@
     return [data sha512Hash];
 }
 
-- (NSData*)sha3Hash
-{
-    NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding];
-    return [data sha3Hash];
-}
-
 @end
