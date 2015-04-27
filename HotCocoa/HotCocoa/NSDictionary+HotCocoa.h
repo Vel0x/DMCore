@@ -18,6 +18,15 @@
 - (NSString*)JSONRepresentation;
 
 /**
+ *	@brief  Creates a JSON representation of the dictionary
+ *
+ *	@param prettyPrint A flag of whether the JSON should be "pretty printed" or not
+ *
+ *	@return On success, the JSON representation of the dictionary as an NSString. On failure, nil.
+ */
+- (NSString*)JSONRepresentationWithPrettyPrint:(BOOL)prettyPrint;
+
+/**
  *	@brief  Returns a random object from within the dictionary
  *
  *  @return Returns a random object from within the dictionary
