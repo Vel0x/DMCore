@@ -7,7 +7,6 @@
 //
 
 #import "NSData+HotCocoa.h"
-#import "NSException+HotCocoa.h"
 #import <CommonCrypto/CommonDigest.h>
 
 @implementation NSData (HotCocoa)

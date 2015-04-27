@@ -34,4 +34,20 @@
     return [data sha512Hash];
 }
 
+- (NSString*)randomCharacter
+{
+    int index = arc4random_uniform((int)[self length]);
+    return [self substringWithRange:NSMakeRange(index, 1)];
+}
+
++ (NSString*)randomStringWithAlphabet:(NSString*)alphabet withLength:(NSInteger)length
+{
+    NSMutableString *rand = [[NSMutableString alloc] initWithCapacity:length];
+    for(NSInteger i = 0; i < length; i++)
+    {
+        [rand appendString:[alphabet randomCharacter]];
+    }
+    return rand;
+}
+
 @end

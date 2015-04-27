@@ -19,4 +19,8 @@
 
 - (NSData*)sha512Hash;
 
+- (NSString*)randomCharacter;
+
++ (NSString*)randomStringWithAlphabet:(NSString*)alphabet withLength:(NSInteger)length;
+
 @end

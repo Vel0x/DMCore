@@ -7,9 +7,20 @@
 //
 
 #import "NSURL+HotCocoa.h"
+#import "NSException+HotCocoa.h"
 
 @implementation NSURL (HotCocoa)
 
+- (NSDictionary*)queryParametersDictionary
+{
+    [NSException raiseUnimplementedMethod];
+    return nil;
+}
 
+- (NSString*)queryParameterByName:(NSString*)name
+{
+    NSDictionary *queryParameters = [self queryParametersDictionary];
+    return queryParameters[name];
+}
 
 @end
