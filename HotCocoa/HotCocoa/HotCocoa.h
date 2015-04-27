@@ -12,6 +12,7 @@
 #include "NSData+HotCocoa.h"
 #include "NSDictionary+HotCocoa.h"
 #include "NSException+HotCocoa.h"
+#include "NSMutableArray+HotCocoa.h"
 #include "NSString+HotCocoa.h"
 #include "NSURL+HotCocoa.h"
 #include "UIView+HotCocoa.h"

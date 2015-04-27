@@ -18,9 +18,20 @@
 - (NSString*)JSONRepresentation;
 
 /**
- *	@brief  Shuffles the array into a random order
+ *	@brief  Creates a JSON representation of the array
+ *
+ *	@param prettyPrint A flag of whether the JSON should be "pretty printed" or not
+ *
+ *	@return On success, the JSON representation of the array as an NSString. On failure, nil.
  */
-- (void)shuffle;
+- (NSString*)JSONRepresentationWithPrettyPrint:(BOOL)prettyPrint;
+
+/**
+ *	@brief  Creates a new array which is a shuffled (randomised) version of this one
+ *
+ *	@return A new shuffled array
+ */
+- (NSArray*)shuffled;
 
 /**
  *	@brief  Returns a random object from within the array
@@ -33,13 +44,10 @@
  *	@brief  Returns a random object from a range within the array
  *
  *	@param objectRange The range within which the random object should be selected
+ *
+ *  @return Returns a random object from a range within the array
  */
-- (void)randomObjectInRange:(NSRange)objectRange;
-
-/**
- *	@brief  Reverses the array in place
- */
-- (void)reverse;
+- (id)randomObjectInRange:(NSRange)objectRange;
 
 /**
  *	@brief  Creates a new instance of the array, but reversed
@@ -47,11 +55,6 @@
  *	@return A new array, which is the reverse of the current
  */
 - (NSArray*)reversed;
-
-/**
- *	@brief  Removes the duplicates from the array in place
- */
-- (void)removeDuplicates;
 
 /**
  *	@brief  Creates a new instance of the array, but with duplicates removed

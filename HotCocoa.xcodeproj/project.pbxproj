@@ -21,6 +21,7 @@
 		CF574CCF1AEC84B300B506BF /* NSString+HotCocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = CF574CCE1AEC84B300B506BF /* NSString+HotCocoa.m */; };
 		CF574CD21AEC854600B506BF /* NSData+HotCocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = CF574CD11AEC854600B506BF /* NSData+HotCocoa.m */; };
 		CF574CD51AEC8BA600B506BF /* NSException+HotCocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = CF574CD41AEC8BA600B506BF /* NSException+HotCocoa.m */; };
+		CF574CD81AEDC54000B506BF /* NSMutableArray+HotCocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = CF574CD71AEDC54000B506BF /* NSMutableArray+HotCocoa.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		CF574CD11AEC854600B506BF /* NSData+HotCocoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+HotCocoa.m"; path = "HotCocoa/NSData+HotCocoa.m"; sourceTree = "<group>"; };
 		CF574CD31AEC8BA600B506BF /* NSException+HotCocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSException+HotCocoa.h"; path = "HotCocoa/NSException+HotCocoa.h"; sourceTree = "<group>"; };
 		CF574CD41AEC8BA600B506BF /* NSException+HotCocoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSException+HotCocoa.m"; path = "HotCocoa/NSException+HotCocoa.m"; sourceTree = "<group>"; };
+		CF574CD61AEDC54000B506BF /* NSMutableArray+HotCocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+HotCocoa.h"; path = "HotCocoa/NSMutableArray+HotCocoa.h"; sourceTree = "<group>"; };
+		CF574CD71AEDC54000B506BF /* NSMutableArray+HotCocoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+HotCocoa.m"; path = "HotCocoa/NSMutableArray+HotCocoa.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +157,8 @@
 				CF574CC81AEC81BF00B506BF /* NSDictionary+HotCocoa.m */,
 				CF574CD31AEC8BA600B506BF /* NSException+HotCocoa.h */,
 				CF574CD41AEC8BA600B506BF /* NSException+HotCocoa.m */,
+				CF574CD61AEDC54000B506BF /* NSMutableArray+HotCocoa.h */,
+				CF574CD71AEDC54000B506BF /* NSMutableArray+HotCocoa.m */,
 				CF574CCD1AEC84B300B506BF /* NSString+HotCocoa.h */,
 				CF574CCE1AEC84B300B506BF /* NSString+HotCocoa.m */,
 				CF574CCA1AEC831200B506BF /* NSURL+HotCocoa.h */,
@@ -266,6 +271,7 @@
 			files = (
 				CF574CC11AEC786800B506BF /* UIView+HotCocoa.m in Sources */,
 				CF574CD21AEC854600B506BF /* NSData+HotCocoa.m in Sources */,
+				CF574CD81AEDC54000B506BF /* NSMutableArray+HotCocoa.m in Sources */,
 				CF574CCF1AEC84B300B506BF /* NSString+HotCocoa.m in Sources */,
 				CF574C9C1AEC780B00B506BF /* AppDelegate.m in Sources */,
 				CF574CA21AEC780B00B506BF /* ViewController.m in Sources */,
