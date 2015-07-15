@@ -1,38 +1,24 @@
-#
-# Be sure to run `pod lib lint DMCore.podspec' to ensure this is a
-# valid spec and remove all comments before submitting the spec.
-#
-# Any lines starting with a # are optional, but encouraged
-#
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = "DMCore"
   s.version          = "0.1.0"
-  s.summary          = "A short description of DMCore."
+  s.summary          = "A collection of classes and categories to make development simpler"
   s.description      = <<-DESC
-                       An optional longer description of DMCore
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+						A collection of classes and categories to make development simpler.
+						Instead of having to remember the best practice to shuffle
+						an array, you can now call `[myArray dm_Shuffle]`. Want
+						the MD5 of a string? `[myString dm_MD5Hash]`
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/DMCore"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage         = "https://github.com/Vel0x/DMCore"
   s.license          = 'MIT'
   s.author           = { "Vel0x" => "DaleMyers19@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/DMCore.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/Vel0x/DMCore.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/Vel0x'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'DMCore' => ['Pod/Assets/*.png']
-  }
+  s.public_header_files = 'Pod/Classes/**/*.h'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'UIKit', 'Foundation'
 end
