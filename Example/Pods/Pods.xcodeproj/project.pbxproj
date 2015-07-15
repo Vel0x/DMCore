@@ -1,0 +1,685 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A8767C967ABE2C591E69320 /* Pods-DMCore_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BAF650CDD975F0E2D0C9733 /* Pods-DMCore_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B74E380B33086A3ED36030B /* Pods-DMCore_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DD504CE4AAE90B1FF7B030 /* Pods-DMCore_Tests-dummy.m */; };
+		8478C8840716D711E02C57DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74F9F3A4DDC92A75AD604A98 /* Foundation.framework */; };
+		B36B61753CA618E9C1EB3722 /* Pods-DMCore_Tests-DMCore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 932F2270B00EC38648B33684 /* Pods-DMCore_Tests-DMCore-dummy.m */; };
+		BEC43DD56AECEB052EE18E7B /* Pods-DMCore_Tests-DMCore-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 40E22AF5F4B1BB5049FD740C /* Pods-DMCore_Tests-DMCore-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF6A44401B57244000C93020 /* DMCore.h in Headers */ = {isa = PBXBuildFile; fileRef = CF6A442F1B57244000C93020 /* DMCore.h */; };
+		CF6A44411B57244000C93020 /* NSArray+DMCore.h in Headers */ = {isa = PBXBuildFile; fileRef = CF6A44301B57244000C93020 /* NSArray+DMCore.h */; };
+		CF6A44421B57244000C93020 /* NSArray+DMCore.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6A44311B57244000C93020 /* NSArray+DMCore.m */; };
+		CF6A44431B57244000C93020 /* NSData+DMCore.h in Headers */ = {isa = PBXBuildFile; fileRef = CF6A44321B57244000C93020 /* NSData+DMCore.h */; };
+		CF6A445E1B5724D800C93020 /* NSData+DMCore.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6A44511B5724D700C93020 /* NSData+DMCore.m */; };
+		CF6A445F1B5724D800C93020 /* NSDictionary+DMCore.h in Headers */ = {isa = PBXBuildFile; fileRef = CF6A44521B5724D700C93020 /* NSDictionary+DMCore.h */; };
+		CF6A44601B5724D800C93020 /* NSDictionary+DMCore.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6A44531B5724D700C93020 /* NSDictionary+DMCore.m */; };
+		CF6A44611B5724D800C93020 /* NSException+DMCore.h in Headers */ = {isa = PBXBuildFile; fileRef = CF6A44541B5724D700C93020 /* NSException+DMCore.h */; };
+		CF6A44621B5724D800C93020 /* NSException+DMCore.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6A44551B5724D700C93020 /* NSException+DMCore.m */; };
+		CF6A44631B5724D800C93020 /* NSMutableArray+DMCore.h in Headers */ = {isa = PBXBuildFile; fileRef = CF6A44561B5724D700C93020 /* NSMutableArray+DMCore.h */; };
+		CF6A44641B5724D800C93020 /* NSMutableArray+DMCore.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6A44571B5724D700C93020 /* NSMutableArray+DMCore.m */; };
+		CF6A44651B5724D800C93020 /* NSString+DMCore.h in Headers */ = {isa = PBXBuildFile; fileRef = CF6A44581B5724D700C93020 /* NSString+DMCore.h */; };
+		CF6A44661B5724D800C93020 /* NSString+DMCore.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6A44591B5724D700C93020 /* NSString+DMCore.m */; };
+		CF6A44671B5724D800C93020 /* NSURL+DMCore.h in Headers */ = {isa = PBXBuildFile; fileRef = CF6A445A1B5724D700C93020 /* NSURL+DMCore.h */; };
+		CF6A44681B5724D800C93020 /* NSURL+DMCore.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6A445B1B5724D700C93020 /* NSURL+DMCore.m */; };
+		CF6A44691B5724D800C93020 /* UIView+DMCore.h in Headers */ = {isa = PBXBuildFile; fileRef = CF6A445C1B5724D700C93020 /* UIView+DMCore.h */; };
+		CF6A446A1B5724D800C93020 /* UIView+DMCore.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6A445D1B5724D800C93020 /* UIView+DMCore.m */; };
+		D5D9C059C2B06B0EF0433847 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74F9F3A4DDC92A75AD604A98 /* Foundation.framework */; };
+		F110250450732C1493268627 /* DMCore.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DC10DB8A0749448284CF5F34 /* DMCore.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		08C5CD94EC1EFE7EA411E672 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DF3B2EF113BF88ADA205D63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D27EF5DA889E680059D0A300;
+			remoteInfo = "Pods-DMCore_Tests-DMCore-DMCore";
+		};
+		400B8C9B603CACC5CD05C36A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DF3B2EF113BF88ADA205D63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 067AF1D6B0A3041C4BBBA55B;
+			remoteInfo = "Pods-DMCore_Tests-DMCore";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06EE00D301A57E149F6E179A /* Pods-DMCore_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DMCore_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		09A29B0FF75FBBC24A6554DD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D6B4FBA40ED7031A5AB090F /* Pods-DMCore_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DMCore_Tests-resources.sh"; sourceTree = "<group>"; };
+		1392D8A9D228C3820EC5606F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CE8CC4A99A52461774E435A /* Pods-DMCore_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DMCore_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		1F7D89EC4F9A8504A7C8E0B7 /* Pods-DMCore_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DMCore_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		221198AD2D149EC29E13F4C0 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		316D86E30D78E9247E27097D /* Pods-DMCore_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DMCore_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		3BAF650CDD975F0E2D0C9733 /* Pods-DMCore_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DMCore_Tests-umbrella.h"; sourceTree = "<group>"; };
+		40E22AF5F4B1BB5049FD740C /* Pods-DMCore_Tests-DMCore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DMCore_Tests-DMCore-umbrella.h"; sourceTree = "<group>"; };
+		5BD7F58E2A50262F4606A8B4 /* Pods-DMCore_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DMCore_Tests.modulemap"; sourceTree = "<group>"; };
+		5F524DA446181D5D546BBBB9 /* Pods-DMCore_Tests-DMCore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DMCore_Tests-DMCore-prefix.pch"; sourceTree = "<group>"; };
+		66DD504CE4AAE90B1FF7B030 /* Pods-DMCore_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DMCore_Tests-dummy.m"; sourceTree = "<group>"; };
+		71CC63382DB747277EEC6CF7 /* Pods-DMCore_Tests-DMCore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DMCore_Tests-DMCore.modulemap"; sourceTree = "<group>"; };
+		74F9F3A4DDC92A75AD604A98 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		932F2270B00EC38648B33684 /* Pods-DMCore_Tests-DMCore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DMCore_Tests-DMCore-dummy.m"; sourceTree = "<group>"; };
+		A934555C7538BD9091A54A0B /* Pods-DMCore_Tests-DMCore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DMCore_Tests-DMCore.xcconfig"; sourceTree = "<group>"; };
+		ABE80709CDC1F07A0B2EF531 /* Pods-DMCore_Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DMCore_Tests-environment.h"; sourceTree = "<group>"; };
+		CC9CA1A260CEB7CCAB2351C5 /* DMCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DMCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF6A442F1B57244000C93020 /* DMCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMCore.h; sourceTree = "<group>"; };
+		CF6A44301B57244000C93020 /* NSArray+DMCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+DMCore.h"; sourceTree = "<group>"; };
+		CF6A44311B57244000C93020 /* NSArray+DMCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+DMCore.m"; sourceTree = "<group>"; };
+		CF6A44321B57244000C93020 /* NSData+DMCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+DMCore.h"; sourceTree = "<group>"; };
+		CF6A44511B5724D700C93020 /* NSData+DMCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+DMCore.m"; sourceTree = "<group>"; };
+		CF6A44521B5724D700C93020 /* NSDictionary+DMCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+DMCore.h"; sourceTree = "<group>"; };
+		CF6A44531B5724D700C93020 /* NSDictionary+DMCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+DMCore.m"; sourceTree = "<group>"; };
+		CF6A44541B5724D700C93020 /* NSException+DMCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSException+DMCore.h"; sourceTree = "<group>"; };
+		CF6A44551B5724D700C93020 /* NSException+DMCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSException+DMCore.m"; sourceTree = "<group>"; };
+		CF6A44561B5724D700C93020 /* NSMutableArray+DMCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+DMCore.h"; sourceTree = "<group>"; };
+		CF6A44571B5724D700C93020 /* NSMutableArray+DMCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+DMCore.m"; sourceTree = "<group>"; };
+		CF6A44581B5724D700C93020 /* NSString+DMCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DMCore.h"; sourceTree = "<group>"; };
+		CF6A44591B5724D700C93020 /* NSString+DMCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DMCore.m"; sourceTree = "<group>"; };
+		CF6A445A1B5724D700C93020 /* NSURL+DMCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+DMCore.h"; sourceTree = "<group>"; };
+		CF6A445B1B5724D700C93020 /* NSURL+DMCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+DMCore.m"; sourceTree = "<group>"; };
+		CF6A445C1B5724D700C93020 /* UIView+DMCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DMCore.h"; sourceTree = "<group>"; };
+		CF6A445D1B5724D800C93020 /* UIView+DMCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DMCore.m"; sourceTree = "<group>"; };
+		DAE24A01932AF067B8D9365F /* Pods-DMCore_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DMCore_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		DC10DB8A0749448284CF5F34 /* DMCore.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DMCore.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		F269BA8DA7BDF7AC1FDF9CC7 /* Pods_DMCore_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DMCore_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA2E5633CAA537BA77EE8283 /* Pods-DMCore_Tests-DMCore-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DMCore_Tests-DMCore-Private.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C6A29DCC40DF80DE228CDC5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB33EFBE30CFC42F80610A34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5D9C059C2B06B0EF0433847 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE8EE251D3862DA20559AA92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8478C8840716D711E02C57DE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06E94FB207DFF3E4F2027E7C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2DF30EDB98F9297A1FE9C3DF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0ACA65537921E62D74A2E110 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				453B598CCAECAFB60F50DF9F /* DMCore */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		0D8989E693C4D4D8C06287EE /* Pods-DMCore_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				09A29B0FF75FBBC24A6554DD /* Info.plist */,
+				5BD7F58E2A50262F4606A8B4 /* Pods-DMCore_Tests.modulemap */,
+				06EE00D301A57E149F6E179A /* Pods-DMCore_Tests-acknowledgements.markdown */,
+				1F7D89EC4F9A8504A7C8E0B7 /* Pods-DMCore_Tests-acknowledgements.plist */,
+				66DD504CE4AAE90B1FF7B030 /* Pods-DMCore_Tests-dummy.m */,
+				ABE80709CDC1F07A0B2EF531 /* Pods-DMCore_Tests-environment.h */,
+				DAE24A01932AF067B8D9365F /* Pods-DMCore_Tests-frameworks.sh */,
+				0D6B4FBA40ED7031A5AB090F /* Pods-DMCore_Tests-resources.sh */,
+				3BAF650CDD975F0E2D0C9733 /* Pods-DMCore_Tests-umbrella.h */,
+				316D86E30D78E9247E27097D /* Pods-DMCore_Tests.debug.xcconfig */,
+				1CE8CC4A99A52461774E435A /* Pods-DMCore_Tests.release.xcconfig */,
+			);
+			name = "Pods-DMCore_Tests";
+			path = "Target Support Files/Pods-DMCore_Tests";
+			sourceTree = "<group>";
+		};
+		2DF30EDB98F9297A1FE9C3DF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				74F9F3A4DDC92A75AD604A98 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		453B598CCAECAFB60F50DF9F /* DMCore */ = {
+			isa = PBXGroup;
+			children = (
+				688C9D824B7809E2938F95BF /* Pod */,
+				8F4E6A1878F3D390DCAC8135 /* Support Files */,
+			);
+			name = DMCore;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		4702FAAC56E6DE64AB5566E7 = {
+			isa = PBXGroup;
+			children = (
+				221198AD2D149EC29E13F4C0 /* Podfile */,
+				0ACA65537921E62D74A2E110 /* Development Pods */,
+				06E94FB207DFF3E4F2027E7C /* Frameworks */,
+				96C2E446214AA8D2C460CA9A /* Products */,
+				E7D05A8E3AB277855326328E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		688C9D824B7809E2938F95BF /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				8DA444532864EFAF1E474953 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		8DA444532864EFAF1E474953 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CF6A442F1B57244000C93020 /* DMCore.h */,
+				CF6A44301B57244000C93020 /* NSArray+DMCore.h */,
+				CF6A44311B57244000C93020 /* NSArray+DMCore.m */,
+				CF6A44321B57244000C93020 /* NSData+DMCore.h */,
+				CF6A44511B5724D700C93020 /* NSData+DMCore.m */,
+				CF6A44521B5724D700C93020 /* NSDictionary+DMCore.h */,
+				CF6A44531B5724D700C93020 /* NSDictionary+DMCore.m */,
+				CF6A44541B5724D700C93020 /* NSException+DMCore.h */,
+				CF6A44551B5724D700C93020 /* NSException+DMCore.m */,
+				CF6A44561B5724D700C93020 /* NSMutableArray+DMCore.h */,
+				CF6A44571B5724D700C93020 /* NSMutableArray+DMCore.m */,
+				CF6A44581B5724D700C93020 /* NSString+DMCore.h */,
+				CF6A44591B5724D700C93020 /* NSString+DMCore.m */,
+				CF6A445A1B5724D700C93020 /* NSURL+DMCore.h */,
+				CF6A445B1B5724D700C93020 /* NSURL+DMCore.m */,
+				CF6A445C1B5724D700C93020 /* UIView+DMCore.h */,
+				CF6A445D1B5724D800C93020 /* UIView+DMCore.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8F4E6A1878F3D390DCAC8135 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1392D8A9D228C3820EC5606F /* Info.plist */,
+				71CC63382DB747277EEC6CF7 /* Pods-DMCore_Tests-DMCore.modulemap */,
+				A934555C7538BD9091A54A0B /* Pods-DMCore_Tests-DMCore.xcconfig */,
+				FA2E5633CAA537BA77EE8283 /* Pods-DMCore_Tests-DMCore-Private.xcconfig */,
+				932F2270B00EC38648B33684 /* Pods-DMCore_Tests-DMCore-dummy.m */,
+				5F524DA446181D5D546BBBB9 /* Pods-DMCore_Tests-DMCore-prefix.pch */,
+				40E22AF5F4B1BB5049FD740C /* Pods-DMCore_Tests-DMCore-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Pods-DMCore_Tests-DMCore";
+			sourceTree = "<group>";
+		};
+		96C2E446214AA8D2C460CA9A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC10DB8A0749448284CF5F34 /* DMCore.bundle */,
+				CC9CA1A260CEB7CCAB2351C5 /* DMCore.framework */,
+				F269BA8DA7BDF7AC1FDF9CC7 /* Pods_DMCore_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E7D05A8E3AB277855326328E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0D8989E693C4D4D8C06287EE /* Pods-DMCore_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5C9CB316053EC5C40AB11547 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF6A44401B57244000C93020 /* DMCore.h in Headers */,
+				CF6A44431B57244000C93020 /* NSData+DMCore.h in Headers */,
+				CF6A44671B5724D800C93020 /* NSURL+DMCore.h in Headers */,
+				BEC43DD56AECEB052EE18E7B /* Pods-DMCore_Tests-DMCore-umbrella.h in Headers */,
+				CF6A44631B5724D800C93020 /* NSMutableArray+DMCore.h in Headers */,
+				CF6A44651B5724D800C93020 /* NSString+DMCore.h in Headers */,
+				CF6A44611B5724D800C93020 /* NSException+DMCore.h in Headers */,
+				CF6A44691B5724D800C93020 /* UIView+DMCore.h in Headers */,
+				CF6A44411B57244000C93020 /* NSArray+DMCore.h in Headers */,
+				CF6A445F1B5724D800C93020 /* NSDictionary+DMCore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC3C225F2A03224E5CF4E570 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A8767C967ABE2C591E69320 /* Pods-DMCore_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		067AF1D6B0A3041C4BBBA55B /* Pods-DMCore_Tests-DMCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BF6D33A3CA88500F5181F32 /* Build configuration list for PBXNativeTarget "Pods-DMCore_Tests-DMCore" */;
+			buildPhases = (
+				7CBB7F39A66A5026A8E66F08 /* Sources */,
+				EB33EFBE30CFC42F80610A34 /* Frameworks */,
+				B666834D9D6EBC31E43C1552 /* Resources */,
+				5C9CB316053EC5C40AB11547 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4697AD708232B1BC2EE3C419 /* PBXTargetDependency */,
+			);
+			name = "Pods-DMCore_Tests-DMCore";
+			productName = "Pods-DMCore_Tests-DMCore";
+			productReference = CC9CA1A260CEB7CCAB2351C5 /* DMCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		93A91D60D56B16BD36D1FF94 /* Pods-DMCore_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DEB8FA075C4D63FCB63872C /* Build configuration list for PBXNativeTarget "Pods-DMCore_Tests" */;
+			buildPhases = (
+				A409AB96F6EF03F41EF56408 /* Sources */,
+				FE8EE251D3862DA20559AA92 /* Frameworks */,
+				AC3C225F2A03224E5CF4E570 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA78639D6FEF606B1893BF12 /* PBXTargetDependency */,
+			);
+			name = "Pods-DMCore_Tests";
+			productName = "Pods-DMCore_Tests";
+			productReference = F269BA8DA7BDF7AC1FDF9CC7 /* Pods_DMCore_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D27EF5DA889E680059D0A300 /* Pods-DMCore_Tests-DMCore-DMCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD82C95E1E594FBB66DF6043 /* Build configuration list for PBXNativeTarget "Pods-DMCore_Tests-DMCore-DMCore" */;
+			buildPhases = (
+				7B26799909F8D6E0BD2F43B4 /* Sources */,
+				C6A29DCC40DF80DE228CDC5B /* Frameworks */,
+				7A31D36DCCFF0F3C69EF448B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-DMCore_Tests-DMCore-DMCore";
+			productName = "Pods-DMCore_Tests-DMCore-DMCore";
+			productReference = DC10DB8A0749448284CF5F34 /* DMCore.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DF3B2EF113BF88ADA205D63 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = B09C32902192EFD18AC1B9FF /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4702FAAC56E6DE64AB5566E7;
+			productRefGroup = 96C2E446214AA8D2C460CA9A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93A91D60D56B16BD36D1FF94 /* Pods-DMCore_Tests */,
+				067AF1D6B0A3041C4BBBA55B /* Pods-DMCore_Tests-DMCore */,
+				D27EF5DA889E680059D0A300 /* Pods-DMCore_Tests-DMCore-DMCore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A31D36DCCFF0F3C69EF448B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B666834D9D6EBC31E43C1552 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F110250450732C1493268627 /* DMCore.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7B26799909F8D6E0BD2F43B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CBB7F39A66A5026A8E66F08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF6A44661B5724D800C93020 /* NSString+DMCore.m in Sources */,
+				CF6A44601B5724D800C93020 /* NSDictionary+DMCore.m in Sources */,
+				CF6A44681B5724D800C93020 /* NSURL+DMCore.m in Sources */,
+				CF6A44641B5724D800C93020 /* NSMutableArray+DMCore.m in Sources */,
+				CF6A445E1B5724D800C93020 /* NSData+DMCore.m in Sources */,
+				CF6A446A1B5724D800C93020 /* UIView+DMCore.m in Sources */,
+				CF6A44621B5724D800C93020 /* NSException+DMCore.m in Sources */,
+				CF6A44421B57244000C93020 /* NSArray+DMCore.m in Sources */,
+				B36B61753CA618E9C1EB3722 /* Pods-DMCore_Tests-DMCore-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A409AB96F6EF03F41EF56408 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B74E380B33086A3ED36030B /* Pods-DMCore_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4697AD708232B1BC2EE3C419 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-DMCore_Tests-DMCore-DMCore";
+			target = D27EF5DA889E680059D0A300 /* Pods-DMCore_Tests-DMCore-DMCore */;
+			targetProxy = 08C5CD94EC1EFE7EA411E672 /* PBXContainerItemProxy */;
+		};
+		FA78639D6FEF606B1893BF12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-DMCore_Tests-DMCore";
+			target = 067AF1D6B0A3041C4BBBA55B /* Pods-DMCore_Tests-DMCore */;
+			targetProxy = 400B8C9B603CACC5CD05C36A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		04AF808F097D3EDCEC3EF184 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 316D86E30D78E9247E27097D /* Pods-DMCore_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DMCore_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-DMCore_Tests/Pods-DMCore_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_DMCore_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		188EFCC402559702A1212529 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA2E5633CAA537BA77EE8283 /* Pods-DMCore_Tests-DMCore-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-DMCore_Tests-DMCore/Pods-DMCore_Tests-DMCore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-DMCore_Tests-DMCore/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-DMCore_Tests-DMCore/Pods-DMCore_Tests-DMCore.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = DMCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1FCB5625590969F4339B7234 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		490867E95B4D1282A83B7992 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA2E5633CAA537BA77EE8283 /* Pods-DMCore_Tests-DMCore-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-DMCore_Tests-DMCore/Pods-DMCore_Tests-DMCore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-DMCore_Tests-DMCore/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-DMCore_Tests-DMCore/Pods-DMCore_Tests-DMCore.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = DMCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6BE3C03C51BA9B01852014E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA2E5633CAA537BA77EE8283 /* Pods-DMCore_Tests-DMCore-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-DMCore_Tests";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = DMCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		81BBEDE1CFC1044409F687B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8E687E2059754603E4E91C36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CE8CC4A99A52461774E435A /* Pods-DMCore_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DMCore_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-DMCore_Tests/Pods-DMCore_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_DMCore_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BE4254CA9DE664189C647989 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA2E5633CAA537BA77EE8283 /* Pods-DMCore_Tests-DMCore-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-DMCore_Tests";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = DMCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6BF6D33A3CA88500F5181F32 /* Build configuration list for PBXNativeTarget "Pods-DMCore_Tests-DMCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				188EFCC402559702A1212529 /* Debug */,
+				490867E95B4D1282A83B7992 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DEB8FA075C4D63FCB63872C /* Build configuration list for PBXNativeTarget "Pods-DMCore_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04AF808F097D3EDCEC3EF184 /* Debug */,
+				8E687E2059754603E4E91C36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B09C32902192EFD18AC1B9FF /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81BBEDE1CFC1044409F687B6 /* Debug */,
+				1FCB5625590969F4339B7234 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD82C95E1E594FBB66DF6043 /* Build configuration list for PBXNativeTarget "Pods-DMCore_Tests-DMCore-DMCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BE3C03C51BA9B01852014E8 /* Debug */,
+				BE4254CA9DE664189C647989 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4DF3B2EF113BF88ADA205D63 /* Project object */;
+}

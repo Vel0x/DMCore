@@ -1,0 +1,14 @@
+PODS:
+  - DMCore (0.1.0)
+
+DEPENDENCIES:
+  - DMCore (from `../`)
+
+EXTERNAL SOURCES:
+  DMCore:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DMCore: 45263ac969f313ba4910f77efb1697bdf2b4fd1e
+
+COCOAPODS: 0.37.2

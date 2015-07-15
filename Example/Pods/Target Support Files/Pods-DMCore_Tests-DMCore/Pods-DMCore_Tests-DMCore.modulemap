@@ -1,0 +1,6 @@
+framework module DMCore {
+  umbrella header "Pods-DMCore_Tests-DMCore-umbrella.h"
+
+  export *
+  module * { export * }
+}
