@@ -12,12 +12,12 @@
 
 @implementation NSArray (HotCocoa)
 
-- (NSString*)JSONRepresentation
+- (NSString*)dm_JSONRepresentation
 {
-    return [self JSONRepresentationWithPrettyPrint:NO];
+    return [self dm_JSONRepresentationWithPrettyPrint:NO];
 }
 
-- (NSString*)JSONRepresentationWithPrettyPrint:(BOOL)prettyPrint
+- (NSString*)dm_JSONRepresentationWithPrettyPrint:(BOOL)prettyPrint
 {
     NSJSONWritingOptions pretty = prettyPrint ? NSJSONWritingPrettyPrinted : 0;
     NSError *error;
@@ -33,20 +33,20 @@
     }
 }
 
-- (NSArray*)shuffled
+- (NSArray*)dm_Shuffle
 {
     NSMutableArray *newArray = [[NSMutableArray alloc] initWithArray:self];
-    [newArray shuffle];
+    [newArray dm_ShuffleInPlace];
     return newArray;
 }
 
-- (id)randomObject
+- (id)dm_RandomObject
 {
     int index = arc4random_uniform((int)[self count]);
     return self[index];
 }
 
-- (id)randomObjectInRange:(NSRange)objectRange
+- (id)dm_RandomObjectInRange:(NSRange)objectRange
 {
     NSInteger location = objectRange.location;
     NSInteger length = 0;
@@ -69,21 +69,21 @@
     return self[index];
 }
 
-- (NSArray*)reversed
+- (NSArray*)dm_Reverse
 {
     NSMutableArray *newArray = [[NSMutableArray alloc] initWithArray:self];
-    [newArray reverse];
+    [newArray dm_ReverseInPlace];
     return newArray;
 }
 
-- (NSArray*)duplicatesRemoved
+- (NSArray*)dm_RemoveDuplicates
 {
     NSMutableArray *newArray = [[NSMutableArray alloc] initWithArray:self];
-    [newArray removeDuplicates];
+    [newArray dm_RemoveDuplicatesInPlace];
     return newArray;
 }
 
-- (id)head
+- (id)dm_Head
 {
     if([self count] > 0)
     {
@@ -93,12 +93,12 @@
     return nil;
 }
 
-- (NSArray*)tail
+- (NSArray*)dm_Tail
 {
     return [self subarrayWithRange:NSMakeRange(1, [self count] -1)];
 }
 
-- (NSArray*)map:(id (^)(id object))block
+- (NSArray*)dm_Map:(id (^)(id object))block
 {
     NSMutableArray *newArray = [[NSMutableArray alloc] initWithCapacity:[self count]];
     
@@ -110,7 +110,7 @@
     return newArray;
 }
 
-- (BOOL)any:(BOOL (^)(id object))block
+- (BOOL)dm_Any:(BOOL (^)(id object))block
 {
     for(NSInteger i = 0; i < [self count]; i++)
     {
@@ -123,7 +123,7 @@
     return NO;
 }
 
-- (BOOL)all:(BOOL (^)(id object))block
+- (BOOL)dm_All:(BOOL (^)(id object))block
 {
     for(NSInteger i = 0; i < [self count]; i++)
     {
@@ -136,7 +136,7 @@
     return YES;
 }
 
-- (NSArray*)select:(BOOL (^)(id object))block
+- (NSArray*)dm_Select:(BOOL (^)(id object))block
 {
     NSMutableArray *newArray = [[NSMutableArray alloc] initWithCapacity:[self count]];
     for(NSInteger i = 0; i < [self count]; i++)
@@ -150,7 +150,7 @@
     return newArray;
 }
 
-- (NSArray*)reject:(BOOL (^)(id object))block
+- (NSArray*)dm_Reject:(BOOL (^)(id object))block
 {
     NSMutableArray *newArray = [[NSMutableArray alloc] initWithCapacity:[self count]];
     for(NSInteger i = 0; i < [self count]; i++)
@@ -164,7 +164,7 @@
     return newArray;
 }
 
-- (id)reduce:(id (^)(id object1, id object2))block withBase:(id)baseObject
+- (id)dm_Reduce:(id (^)(id object1, id object2))block withBase:(id)baseObject
 {
     id total = baseObject;
     

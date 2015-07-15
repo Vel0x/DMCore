@@ -15,7 +15,7 @@
  *
  *	@return On success, the JSON representation of the array as an NSString. On failure, nil.
  */
-- (NSString*)JSONRepresentation;
+- (NSString*)dm_JSONRepresentation;
 
 /**
  *	@brief  Creates a JSON representation of the array
@@ -24,21 +24,21 @@
  *
  *	@return On success, the JSON representation of the array as an NSString. On failure, nil.
  */
-- (NSString*)JSONRepresentationWithPrettyPrint:(BOOL)prettyPrint;
+- (NSString*)dm_JSONRepresentationWithPrettyPrint:(BOOL)prettyPrint;
 
 /**
  *	@brief  Creates a new array which is a shuffled (randomised) version of this one
  *
  *	@return A new shuffled array
  */
-- (NSArray*)shuffled;
+- (NSArray*)dm_Shuffle;
 
 /**
  *	@brief  Returns a random object from within the array
  *
  *  @return Returns a random object from within the array
  */
-- (id)randomObject;
+- (id)dm_RandomObject;
 
 /**
  *	@brief  Returns a random object from a range within the array
@@ -47,28 +47,28 @@
  *
  *  @return Returns a random object from a range within the array
  */
-- (id)randomObjectInRange:(NSRange)objectRange;
+- (id)dm_RandomObjectInRange:(NSRange)objectRange;
 
 /**
  *	@brief  Creates a new instance of the array, but reversed
  *
  *	@return A new array, which is the reverse of the current
  */
-- (NSArray*)reversed;
+- (NSArray*)dm_Reverse;
 
 /**
  *	@brief  Creates a new instance of the array, but with duplicates removed
  *
  *	@return A new array, with the duplicates removed
  */
-- (NSArray*)duplicatesRemoved;
+- (NSArray*)dm_RemoveDuplicates;
 
 /**
  *	@brief  Gets the first object in the array
  *
  *	@return The first object in the array
  */
-- (id)head;
+- (id)dm_Head;
 
 /**
  *	@brief  Creates an new array with all the same objects, in the same order, 
@@ -76,7 +76,7 @@
  *
  *	@return A new array, with all objects except the first, in the same order
  */
-- (NSArray*)tail;
+- (NSArray*)dm_Tail;
 
 /**
  *	@brief  Maps a supplied block onto every element in the array
@@ -85,7 +85,7 @@
  *
  *	@return A new array with only the matching elements in it
  */
-- (NSArray*)map:(id (^)(id object))block;
+- (NSArray*)dm_Map:(id (^)(id object))block;
 
 /**
  *	@brief  Checks if any element in the array matches the condition
@@ -94,7 +94,7 @@
  *
  *	@return YES if at least one element matches the condition, otherwise NO
  */
-- (BOOL)any:(BOOL (^)(id object))block;
+- (BOOL)dm_Any:(BOOL (^)(id object))block;
 
 /**
  *	@brief  Checks if all elements in the array match the condition
@@ -103,7 +103,7 @@
  *
  *	@return YES if all elements match the condition, otherwise NO
  */
-- (BOOL)all:(BOOL (^)(id object))block;
+- (BOOL)dm_All:(BOOL (^)(id object))block;
 
 /**
  *	@brief  Selects the elements which match the supplied condition
@@ -112,7 +112,7 @@
  *
  *	@return A new array with only the matching elements in it
  */
-- (NSArray*)select:(BOOL (^)(id object))block;
+- (NSArray*)dm_Select:(BOOL (^)(id object))block;
 
 /**
  *	@brief  Selects the elements which do not match the supplied condition
@@ -121,7 +121,7 @@
  *
  *	@return A new array with only the non-matching elements in it
  */
-- (NSArray*)reject:(BOOL (^)(id object))block;
+- (NSArray*)dm_Reject:(BOOL (^)(id object))block;
 
 /**
  *	@brief  Performs a reduce (or fold) operation, to the right, on the array 
@@ -132,6 +132,6 @@
  *
  *	@return The result of applying the fold operation to the array
  */
-- (id)reduce:(id (^)(id object1, id object2))block withBase:(id)baseObject;
+- (id)dm_Reduce:(id (^)(id object1, id object2))block withBase:(id)baseObject;
 
 @end

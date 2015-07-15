@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSArray *test = [[NSArray alloc] initWithObjects:@"A",@"B",@"C",@"D",@"E", nil];
-    NSString *testResult = [test reduce:^id(NSString *v1, NSString *v2){ return [v1 stringByAppendingString:v2]; }
+    NSString *testResult = [test dm_Reduce:^id(NSString *v1, NSString *v2){ return [v1 stringByAppendingString:v2]; }
                                withBase:@""];
     
     

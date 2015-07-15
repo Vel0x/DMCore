@@ -10,48 +10,46 @@
 
 @implementation UIView (HotCocoa)
 
-- (void)setFrameX:(CGFloat)x
+- (void)dm_SetFrameX:(CGFloat)x
 {
     CGRect frame = [self frame];
     frame.origin.x = x;
     [self setFrame:frame];
 }
 
-- (void)setFrameY:(CGFloat)y
+- (void)dm_SetFrameY:(CGFloat)y
 {
     CGRect frame = [self frame];
     frame.origin.y = y;
     [self setFrame:frame];
 }
 
-- (void)setFrameWidth:(CGFloat)width
+- (void)dm_SetFrameWidth:(CGFloat)width
 {
     CGRect frame = [self frame];
     frame.size.width = width;
     [self setFrame:frame];
 }
 
-- (void)setFrameHeight:(CGFloat)height
+- (void)dm_SetFrameHeight:(CGFloat)height
 {
     CGRect frame = [self frame];
     frame.size.height = height;
     [self setFrame:frame];
 }
 
-- (void)setFrameOrigin:(CGPoint)origin
+- (void)dm_SetFrameOrigin:(CGPoint)origin
 {
     CGRect frame = [self frame];
     frame.origin = origin;
     [self setFrame:frame];
 }
 
-- (void)setFrameSize:(CGSize)size
+- (void)dm_SetFrameSize:(CGSize)size
 {
     CGRect frame = [self frame];
     frame.size = size;
     [self setFrame:frame];
 }
-
-
 
 @end

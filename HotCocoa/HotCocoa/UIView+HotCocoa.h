@@ -15,42 +15,42 @@
  *
  *	@param x The new x position of the view
  */
-- (void)setFrameX:(CGFloat)x;
+- (void)dm_SetFrameX:(CGFloat)x;
 
 /**
  *	@brief  Set the view frame Y position
  *
  *	@param y The new y position of the view
  */
-- (void)setFrameY:(CGFloat)y;
+- (void)dm_SetFrameY:(CGFloat)y;
 
 /**
  *	@brief  Set the view frame width
  *
  *	@param width The new width of the view
  */
-- (void)setFrameWidth:(CGFloat)width;
+- (void)dm_SetFrameWidth:(CGFloat)width;
 
 /**
  *	@brief  Set the view frame height
  *
  *	@param height The new height of the view
  */
-- (void)setFrameHeight:(CGFloat)height;
+- (void)dm_SetFrameHeight:(CGFloat)height;
 
 /**
  *	@brief  Set the view frame origin
  *
  *	@param origin The new origin of the view
  */
-- (void)setFrameOrigin:(CGPoint)origin;
+- (void)dm_SetFrameOrigin:(CGPoint)origin;
 
 /**
  *	@brief  Set the view frame size
  *
  *	@param size The new size of the view
  */
-- (void)setFrameSize:(CGSize)size;
+- (void)dm_SetFrameSize:(CGSize)size;
 
 
 

@@ -11,65 +11,65 @@
 
 @implementation NSData (HotCocoa)
 
-- (NSData*)md5Hash
+- (NSData*)dm_MD5Hash
 {
     unsigned char digest[CC_MD5_DIGEST_LENGTH];
     CC_MD5([self bytes], (CC_LONG)[self length], digest);
     return [NSData dataWithBytes:digest length:CC_MD5_DIGEST_LENGTH];
 }
 
-- (NSString*)md5HashHexString
+- (NSString*)dm_MD5HashHexString
 {
-    return [[self md5Hash] hexStringUpper];
+    return [[self dm_MD5Hash] dm_HexStringUpper];
 }
 
-- (NSData*)sha1Hash
+- (NSData*)dm_SHA1Hash
 {
     unsigned char digest[CC_SHA1_DIGEST_LENGTH];
     CC_SHA1([self bytes], (CC_LONG)[self length], digest);
     return [NSData dataWithBytes:digest length:CC_SHA1_DIGEST_LENGTH];
 }
 
-- (NSString*)sha1HashHexString
+- (NSString*)dm_SHA1HashHexString
 {
-    return [[self sha1Hash] hexStringUpper];
+    return [[self dm_SHA1Hash] dm_HexStringUpper];
 }
 
-- (NSData*)sha256Hash
+- (NSData*)dm_SHA256Hash
 {
     unsigned char digest[CC_SHA256_DIGEST_LENGTH];
     CC_SHA256([self bytes], (CC_LONG)[self length], digest);
     return [NSData dataWithBytes:digest length:CC_SHA256_DIGEST_LENGTH];
 }
 
-- (NSString*)sha256HashHexString
+- (NSString*)dm_SHA256HashHexString
 {
-    return [[self sha256Hash] hexStringUpper];
+    return [[self dm_SHA256Hash] dm_HexStringUpper];
 }
 
-- (NSData*)sha512Hash
+- (NSData*)dm_SHA512Hash
 {
     unsigned char digest[CC_SHA512_DIGEST_LENGTH];
     CC_SHA512([self bytes], (CC_LONG)[self length], digest);
     return [NSData dataWithBytes:digest length:CC_SHA512_DIGEST_LENGTH];
 }
 
-- (NSString*)sha512HashHexString
+- (NSString*)dm_SHA512HashHexString
 {
-    return [[self sha512Hash] hexStringUpper];
+    return [[self dm_SHA512Hash] dm_HexStringUpper];
 }
 
-- (NSString*)hexStringLower
+- (NSString*)dm_HexStringLower
 {
-    return [self hexStringWithAlphabet:"0123456789abcdef"];
+    return [self dm_HexStringWithAlphabet:"0123456789abcdef"];
 }
 
-- (NSString*)hexStringUpper
+- (NSString*)dm_HexStringUpper
 {
-    return [self hexStringWithAlphabet:"0123456789ABCDEF"];
+    return [self dm_HexStringWithAlphabet:"0123456789ABCDEF"];
 }
 
-+ (NSData*)randomDataWithLength:(int)length
++ (NSData*)dm_RandomDataWithLength:(int)length
 {
     unsigned char *randomData = malloc(length * sizeof(char));
     
@@ -92,7 +92,7 @@
 #pragma mark - 
 #pragma mark Private
 
-- (NSString*)hexStringWithAlphabet:(char*)alphabet
+- (NSString*)dm_HexStringWithAlphabet:(char*)alphabet
 {
     long bufferLength = ([self length] * 2) + 1;
     char *hexStringBuffer = malloc(bufferLength * sizeof(char));

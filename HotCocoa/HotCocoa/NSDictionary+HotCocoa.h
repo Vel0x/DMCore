@@ -15,7 +15,7 @@
  *
  *	@return On success, the JSON representation of the dictionary as an NSString. On failure, nil.
  */
-- (NSString*)JSONRepresentation;
+- (NSString*)dm_JSONRepresentation;
 
 /**
  *	@brief  Creates a JSON representation of the dictionary
@@ -24,14 +24,14 @@
  *
  *	@return On success, the JSON representation of the dictionary as an NSString. On failure, nil.
  */
-- (NSString*)JSONRepresentationWithPrettyPrint:(BOOL)prettyPrint;
+- (NSString*)dm_JSONRepresentationWithPrettyPrint:(BOOL)prettyPrint;
 
 /**
  *	@brief  Returns a random object from within the dictionary
  *
  *  @return Returns a random object from within the dictionary
  */
-- (id)randomObject;
+- (id)dm_RandomObject;
 
 
 @end

@@ -15,70 +15,70 @@
  *
  *	@return The MD5 hash of the data
  */
-- (NSData*)md5Hash;
+- (NSData*)dm_MD5Hash;
 
 /**
  *	@brief  Calculates the MD5 hash of the data as a hex string
  *
  *	@return The MD5 hash of the data as a hex string
  */
-- (NSString*)md5HashHexString;
+- (NSString*)dm_MD5HashHexString;
 
 /**
  *	@brief  Calculates the SHA-1 hash of the data
  *
  *	@return The SHA-1 hash of the data
  */
-- (NSData*)sha1Hash;
+- (NSData*)dm_SHA1Hash;
 
 /**
  *	@brief  Calculates the SHA-1 hash of the data as a hex string
  *
  *	@return The SHA-1 hash of the data as a hex string
  */
-- (NSString*)sha1HashHexString;
+- (NSString*)dm_SHA1HashHexString;
 
 /**
  *	@brief  Calculates the SHA-256 hash of the data
  *
  *	@return The SHA-256 hash of the data
  */
-- (NSData*)sha256Hash;
+- (NSData*)dm_SHA256Hash;
 
 /**
  *	@brief  Calculates the SHA-256 hash of the data as a hex string
  *
  *	@return The SHA-256 hash of the data as a hex string
  */
-- (NSString*)sha256HashHexString;
+- (NSString*)dm_SHA256HashHexString;
 
 /**
  *	@brief  Calculates the SHA-512 hash of the data
  *
  *	@return The SHA-512 hash of the data
  */
-- (NSData*)sha512Hash;
+- (NSData*)dm_SHA512Hash;
 
 /**
  *	@brief  Calculates the SHA-512 hash of the data as a hex string
  *
  *	@return The SHA-512 hash of the data as a hex string
  */
-- (NSString*)sha512HashHexString;
+- (NSString*)dm_SHA512HashHexString;
 
 /**
  *	@brief  Converts the data to a lower case hex string
  *
  *	@return A lower case hex string representation of the data
  */
-- (NSString*)hexStringLower;
+- (NSString*)dm_HexStringLower;
 
 /**
  *	@brief  Converts the data to an upper case hex string
  *
  *	@return An upper case hex string representation of the data
  */
-- (NSString*)hexStringUpper;
+- (NSString*)dm_HexStringUpper;
 
 /**
  *	@brief  Returns random data of the specified length
@@ -87,7 +87,7 @@
  *
  *	@return Random data of the supplied length
  */
-+ (NSData*)randomDataWithLength:(int)length;
++ (NSData*)dm_RandomDataWithLength:(int)length;
 
 
 @end

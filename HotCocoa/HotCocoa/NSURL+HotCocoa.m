@@ -11,15 +11,15 @@
 
 @implementation NSURL (HotCocoa)
 
-- (NSDictionary*)queryParametersDictionary
+- (NSDictionary*)dm_QueryParametersDictionary
 {
-    [NSException raiseUnimplementedMethod];
+    [NSException dm_RaiseUnimplementedMethod];
     return nil;
 }
 
-- (NSString*)queryParameterByName:(NSString*)name
+- (NSString*)dm_QueryParameterByName:(NSString*)name
 {
-    NSDictionary *queryParameters = [self queryParametersDictionary];
+    NSDictionary *queryParameters = [self dm_QueryParametersDictionary];
     return queryParameters[name];
 }
 

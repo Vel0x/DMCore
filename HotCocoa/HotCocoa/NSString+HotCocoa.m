@@ -10,42 +10,42 @@
 
 @implementation NSString (HotCocoa)
 
-- (NSData*)md5Hash
+- (NSData*)dm_MD5Hash
 {
     NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding];
-    return [data md5Hash];
+    return [data dm_MD5Hash];
 }
 
-- (NSData*)sha1Hash
+- (NSData*)dm_SHA1Hash
 {
     NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding];
-    return [data sha1Hash];
+    return [data dm_SHA1Hash];
 }
 
-- (NSData*)sha256Hash
+- (NSData*)dm_SHA256Hash
 {
     NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding];
-    return [data sha256Hash];
+    return [data dm_SHA256Hash];
 }
 
-- (NSData*)sha512Hash
+- (NSData*)dm_SHA512Hash
 {
     NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding];
-    return [data sha512Hash];
+    return [data dm_SHA512Hash];
 }
 
-- (NSString*)randomCharacter
+- (NSString*)dm_RandomCharacter
 {
     int index = arc4random_uniform((int)[self length]);
     return [self substringWithRange:NSMakeRange(index, 1)];
 }
 
-+ (NSString*)randomStringWithAlphabet:(NSString*)alphabet withLength:(NSInteger)length
++ (NSString*)dm_RandomStringWithAlphabet:(NSString*)alphabet withLength:(NSInteger)length
 {
     NSMutableString *rand = [[NSMutableString alloc] initWithCapacity:length];
     for(NSInteger i = 0; i < length; i++)
     {
-        [rand appendString:[alphabet randomCharacter]];
+        [rand appendString:[alphabet dm_RandomCharacter]];
     }
     return rand;
 }

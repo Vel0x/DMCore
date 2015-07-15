@@ -13,16 +13,16 @@
 /**
  *	@brief  Shuffles the array into a random order
  */
-- (void)shuffle;
+- (void)dm_ShuffleInPlace;
 
 /**
  *	@brief  Reverses the array in place
  */
-- (void)reverse;
+- (void)dm_ReverseInPlace;
 
 /**
  *	@brief  Removes the duplicates from the array in place
  */
-- (void)removeDuplicates;
+- (void)dm_RemoveDuplicatesInPlace;
 
 @end

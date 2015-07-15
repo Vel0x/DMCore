@@ -10,7 +10,7 @@
 
 @implementation NSMutableArray (HotCocoa)
 
-- (void)shuffle
+- (void)dm_ShuffleInPlace
 {
     for(int i = 0; i < [self count]; i++)
     {
@@ -19,7 +19,7 @@
     }
 }
 
-- (void)reverse
+- (void)dm_ReverseInPlace
 {
     for(int i = 0; i < [self count]/2; i++)
     {
@@ -28,7 +28,7 @@
     }
 }
 
-- (void)removeDuplicates
+- (void)dm_RemoveDuplicatesInPlace
 {
     NSInteger i = 0;
     while(i < [self count] - 1)

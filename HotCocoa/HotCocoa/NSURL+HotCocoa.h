@@ -15,7 +15,7 @@
  *
  *	@return The query parameters as a dictionary
  */
-- (NSDictionary*)queryParametersDictionary;
+- (NSDictionary*)dm_QueryParametersDictionary;
 
 /**
  *	@brief  Gets a query parameter from the URL by name
@@ -24,6 +24,6 @@
  *
  *	@return The query parameter with the supplied name
  */
-- (NSString*)queryParameterByName:(NSString*)name;
+- (NSString*)dm_QueryParameterByName:(NSString*)name;
 
 @end

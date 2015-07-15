@@ -16,35 +16,35 @@
  *
  *	@return The MD5 hash of the string
  */
-- (NSData*)md5Hash;
+- (NSData*)dm_MD5Hash;
 
 /**
  *	@brief  Gets the SHA1 hash of the string. This method assumes UTF8 encoding.
  *
  *	@return The SHA1 hash of the string
  */
-- (NSData*)sha1Hash;
+- (NSData*)dm_SHA1Hash;
 
 /**
  *	@brief  Gets the SHA256 hash of the string. This method assumes UTF8 encoding.
  *
  *	@return The SHA256 hash of the string
  */
-- (NSData*)sha256Hash;
+- (NSData*)dm_SHA256Hash;
 
 /**
  *	@brief  Gets the SHA512 hash of the string. This method assumes UTF8 encoding.
  *
  *	@return The SHA512 hash of the string
  */
-- (NSData*)sha512Hash;
+- (NSData*)dm_SHA512Hash;
 
 /**
  *	@brief  Selects and returns a random character from the string
  *
  *	@return A random character from the string
  */
-- (NSString*)randomCharacter;
+- (NSString*)dm_RandomCharacter;
 
 /**
  *	@brief  Constructs a random string from the supplied alphabet with the supplied length
@@ -54,6 +54,6 @@
  *
  *	@return A random string of characters from the supplied alphabet with the supplied length
  */
-+ (NSString*)randomStringWithAlphabet:(NSString*)alphabet withLength:(NSInteger)length;
++ (NSString*)dm_RandomStringWithAlphabet:(NSString*)alphabet withLength:(NSInteger)length;
 
 @end

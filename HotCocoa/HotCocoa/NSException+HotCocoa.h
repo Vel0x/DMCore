@@ -10,8 +10,8 @@
 
 @interface NSException (HotCocoa)
 
-+ (void)raiseUnimplementedMethod;
++ (void)dm_RaiseUnimplementedMethod;
 
-+ (void)raiseUnimplementedMethodWithName:(const char*)methodName;
++ (void)dm_RaiseUnimplementedMethodWithName:(const char*)methodName;
 
 @end

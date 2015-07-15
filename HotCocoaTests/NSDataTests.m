@@ -33,7 +33,7 @@
                                 };
     for(NSString *key in testCases)
     {
-        NSString *hexResult = [[key dataUsingEncoding:NSUTF8StringEncoding] hexStringLower];
+        NSString *hexResult = [[key dataUsingEncoding:NSUTF8StringEncoding] dm_HexStringLower];
         XCTAssert([testCases[key] isEqualToString:hexResult]);
     }
 }
@@ -53,7 +53,7 @@
                                 };
     for(NSString *key in testCases)
     {
-        NSString *hexResult = [[key dataUsingEncoding:NSUTF8StringEncoding] hexStringUpper];
+        NSString *hexResult = [[key dataUsingEncoding:NSUTF8StringEncoding] dm_HexStringUpper];
         XCTAssert([testCases[key] isEqualToString:hexResult]);
     }
 }
@@ -65,14 +65,14 @@
     // We can check the length though.
     for(int i = 0; i < 50; i++)
     {
-        NSData *random = [NSData randomDataWithLength:i];
+        NSData *random = [NSData dm_RandomDataWithLength:i];
         XCTAssert([random length] == i);
     }
     
-    NSData *random2 = [NSData randomDataWithLength:0];
+    NSData *random2 = [NSData dm_RandomDataWithLength:0];
     XCTAssert(random2 == nil);
     
-    NSData *random3 = [NSData randomDataWithLength:-1];
+    NSData *random3 = [NSData dm_RandomDataWithLength:-1];
     XCTAssert(random3 == nil);
 }
 

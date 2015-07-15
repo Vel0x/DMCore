@@ -10,7 +10,7 @@
 
 @implementation NSException (HotCocoa)
 
-+ (void)raiseUnimplementedMethod
++ (void)dm_RaiseUnimplementedMethod
 {
     NSArray *callStack = [NSThread callStackSymbols];
     NSString *method;
@@ -19,7 +19,7 @@
     
     if([callStack count] < 2)
     {
-        [NSException raiseUnimplementedMethodWithName:"Unknown Method"];
+        [NSException dm_RaiseUnimplementedMethodWithName:"Unknown Method"];
         return;
     }
     
@@ -29,7 +29,7 @@
     
     if(dashPosition.location == NSNotFound)
     {
-        [NSException raiseUnimplementedMethodWithName:[method UTF8String]];
+        [NSException dm_RaiseUnimplementedMethodWithName:[method UTF8String]];
         return;
     }
     
@@ -39,16 +39,16 @@
     
     if(closingBracketPosition.location == NSNotFound)
     {
-        [NSException raiseUnimplementedMethodWithName:[method UTF8String]];
+        [NSException dm_RaiseUnimplementedMethodWithName:[method UTF8String]];
         return;
     }
     
     method = [method substringToIndex:closingBracketPosition.location + 1];
     
-    [NSException raiseUnimplementedMethodWithName:[method UTF8String]];
+    [NSException dm_RaiseUnimplementedMethodWithName:[method UTF8String]];
 }
 
-+ (void)raiseUnimplementedMethodWithName:(const char*)methodName
++ (void)dm_RaiseUnimplementedMethodWithName:(const char*)methodName
 {
     [NSException raise:@"Unimplemented Method" format:@"The following method has not yet been implemented: %s",methodName];
 }

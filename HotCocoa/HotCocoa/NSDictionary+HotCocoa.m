@@ -10,12 +10,12 @@
 
 @implementation NSDictionary (HotCocoa)
 
-- (NSString*)JSONRepresentation
+- (NSString*)dm_JSONRepresentation
 {
-    return [self JSONRepresentationWithPrettyPrint:NO];
+    return [self dm_JSONRepresentationWithPrettyPrint:NO];
 }
 
-- (NSString*)JSONRepresentationWithPrettyPrint:(BOOL)prettyPrint
+- (NSString*)dm_JSONRepresentationWithPrettyPrint:(BOOL)prettyPrint
 {
     NSJSONWritingOptions pretty = prettyPrint ? NSJSONWritingPrettyPrinted : 0;
     NSError *error;
@@ -31,7 +31,7 @@
     }
 }
 
-- (id)randomObject
+- (id)dm_RandomObject
 {
     int index = arc4random_uniform((int)[self count]);
     NSArray *keys = [self allKeys];
