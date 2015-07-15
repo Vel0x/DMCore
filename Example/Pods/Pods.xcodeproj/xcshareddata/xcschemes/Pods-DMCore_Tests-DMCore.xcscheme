@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "067AF1D6B0A3041C4BBBA55B"
+               BlueprintIdentifier = "21AD00A340838A2336505911"
                BuildableName = "DMCore.framework"
                BlueprintName = "Pods-DMCore_Tests-DMCore"
                ReferencedContainer = "container:Pods.xcodeproj">

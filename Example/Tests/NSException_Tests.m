@@ -8,11 +8,13 @@
 
 @import XCTest;
 
-@interface Tests : XCTestCase
+#import <DMCore/NSException+DMCore.h>
+
+@interface NSException_Tests : XCTestCase
 
 @end
 
-@implementation Tests
+@implementation NSException_Tests
 
 - (void)setUp
 {
