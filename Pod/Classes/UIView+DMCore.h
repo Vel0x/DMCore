@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ *	@brief  A collection of useful methods for UIView
+ */
 @interface UIView (DMCore)
 
 /**

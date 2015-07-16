@@ -28,9 +28,73 @@
     [super tearDown];
 }
 
-- (void)testExample
+/**
+ *	@brief  Tests throwing an unimplemented method exception with a custom name
+ */
+- (void)testMethodSpecified
 {
-	XCTAssert(YES, @"Pass");
+	BOOL exceptionThrownAndCaught = NO;
+	
+	@try
+	{
+		[NSException dm_RaiseUnimplementedMethodWithName:"Hello World"];
+	}
+	@catch (NSException *exception)
+	{
+		exceptionThrownAndCaught = YES;
+		XCTAssert([[exception name] isEqualToString:@"Unimplemented Method"], @"Pass");
+		XCTAssert([[exception reason] hasSuffix:@"Hello World"], @"Pass");
+	}
+	XCTAssert(exceptionThrownAndCaught == YES, @"Pass");
+}
+
+/**
+ *	@brief  Tests throwing an unimplemented with the name derived automatically
+ */
+- (void)testNoMethodSpecified
+{
+	BOOL exceptionThrownAndCaught = NO;
+	
+	@try
+	{
+		[NSException dm_RaiseUnimplementedMethod];
+	}
+	@catch (NSException *exception)
+	{
+		exceptionThrownAndCaught = YES;
+		XCTAssert([[exception name] isEqualToString:@"Unimplemented Method"], @"Pass");
+		XCTAssert([[exception reason] hasSuffix:@"[NSException_Tests testNoMethodSpecified]"], @"Pass");
+	}
+	XCTAssert(exceptionThrownAndCaught == YES, @"Pass");
+}
+
+/**
+ *	@brief  Tests throwing an unimplemented exception within a block
+ */
+- (void)testBlock
+{
+	void (^testBlock)() = ^void(){
+		BOOL exceptionThrownAndCaught = NO;
+		
+		@try
+		{
+			[NSException dm_RaiseUnimplementedMethod];
+		}
+		@catch (NSException *exception)
+		{
+			exceptionThrownAndCaught = YES;
+			XCTAssert([[exception name] isEqualToString:@"Unimplemented Method"], @"Pass");
+			XCTAssert([[exception reason] hasSuffix:@"[NSException_Tests testBlock]"], @"Pass");
+		}
+		XCTAssert(exceptionThrownAndCaught == YES, @"Pass");
+	};
+	
+	testBlock();
+	
+	dispatch_async(dispatch_get_main_queue(), ^{
+		testBlock();
+	});
+	
 }
 
 @end

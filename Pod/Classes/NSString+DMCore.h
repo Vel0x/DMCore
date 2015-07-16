@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "NSData+DMCore.h"
 
+/**
+ *	@brief  A collection of useful methods for NSString
+ */
 @interface NSString (DMCore)
 
 /**

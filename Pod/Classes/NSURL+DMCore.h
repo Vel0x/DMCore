@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ *	@brief  A collection of useful methods for NSURL
+ */
 @interface NSURL (DMCore)
 
 /**

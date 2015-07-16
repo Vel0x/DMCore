@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ *	@brief  A collection of useful methods for NSArray
+ */
 @interface NSArray (DMCore)
 
 /**
