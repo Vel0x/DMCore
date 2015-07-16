@@ -8,7 +8,7 @@
 
 @import XCTest;
 
-#import <DMCore/UIView+DMCore.h>
+#import <DMCore/UIDevice+DMCore.h>
 
 @interface UIDevice_Tests : XCTestCase
 
@@ -28,9 +28,29 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testMemory
 {
-	XCTAssert(YES, @"Pass");
+	NSNumber *memoryFree = [[UIDevice currentDevice] dm_MemoryFree];
+	NSNumber *memoryUsed = [[UIDevice currentDevice] dm_MemoryUsed];
+	
+	XCTAssert(memoryFree >= 0, @"Pass");
+	XCTAssert(memoryUsed >= 0, @"Pass");
+}
+
+- (void)testDisk
+{
+	NSNumber *diskCapacity = [[UIDevice currentDevice] dm_DiskCapacity];
+	NSNumber *diskSpaceFree = [[UIDevice currentDevice] dm_DiskSpaceFree];
+	
+	XCTAssert(diskCapacity >= 0, @"Pass");
+	XCTAssert(diskSpaceFree >= 0, @"Pass");
+}
+
+- (void)testOther
+{
+	NSString *modelCode = [[UIDevice currentDevice] dm_ModelCode];
+	
+	XCTAssert([modelCode isEqualToString:@"x86_64"] || [modelCode isEqualToString:@"i386"], @"Pass");
 }
 
 @end
