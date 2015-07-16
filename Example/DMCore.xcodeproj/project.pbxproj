@@ -20,6 +20,8 @@
 		CF6A44751B57273500C93020 /* NSString_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6A446F1B57273500C93020 /* NSString_Tests.m */; };
 		CF6A44761B57273500C93020 /* UIView_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6A44701B57273500C93020 /* UIView_Tests.m */; };
 		CF6A44781B5727FD00C93020 /* NSURL_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6A44771B5727FC00C93020 /* NSURL_Tests.m */; };
+		CF6A44851B5745AC00C93020 /* UIApplication_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6A44831B5745AC00C93020 /* UIApplication_Tests.m */; };
+		CF6A44861B5745AC00C93020 /* UIDevice_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6A44841B5745AC00C93020 /* UIDevice_Tests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		CF6A446F1B57273500C93020 /* NSString_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSString_Tests.m; sourceTree = "<group>"; };
 		CF6A44701B57273500C93020 /* UIView_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIView_Tests.m; sourceTree = "<group>"; };
 		CF6A44771B5727FC00C93020 /* NSURL_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURL_Tests.m; sourceTree = "<group>"; };
+		CF6A44831B5745AC00C93020 /* UIApplication_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIApplication_Tests.m; sourceTree = "<group>"; };
+		CF6A44841B5745AC00C93020 /* UIDevice_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDevice_Tests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,8 @@
 				CF6A446F1B57273500C93020 /* NSString_Tests.m */,
 				CF6A44771B5727FC00C93020 /* NSURL_Tests.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
+				CF6A44831B5745AC00C93020 /* UIApplication_Tests.m */,
+				CF6A44841B5745AC00C93020 /* UIDevice_Tests.m */,
 				CF6A44701B57273500C93020 /* UIView_Tests.m */,
 			);
 			path = Tests;
@@ -265,6 +271,8 @@
 				CF6A44711B57273500C93020 /* NSData_Tests.m in Sources */,
 				CF6A44721B57273500C93020 /* NSDictionary_Tests.m in Sources */,
 				CF6A44781B5727FD00C93020 /* NSURL_Tests.m in Sources */,
+				CF6A44861B5745AC00C93020 /* UIDevice_Tests.m in Sources */,
+				CF6A44851B5745AC00C93020 /* UIApplication_Tests.m in Sources */,
 				6003F5BC195388D20070C39A /* NSArray_Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -28,7 +28,7 @@
     [super tearDown];
 }
 
-- (void)testSimple
+- (void)testQueryParametersSimple
 {
 	NSURL *testUrl = [NSURL URLWithString:@"https://domainname.com/path?param1=Hello&param2=World"];
 	NSDictionary *parameters = [testUrl dm_QueryParametersDictionary];
@@ -37,7 +37,7 @@
 	XCTAssert([parameters[@"param2"] isEqualToString:@"World"], @"Pass");
 }
 
-- (void)testHTMLCharacters
+- (void)testQueryParametersHTMLCharacters
 {
 	NSURL *testUrl = [NSURL URLWithString:@"https://domainname.com/pa&amp;th?param1=Hello&param2=World"];
 	NSDictionary *parameters = [testUrl dm_QueryParametersDictionary];
@@ -46,7 +46,7 @@
 	XCTAssert([parameters[@"param2"] isEqualToString:@"World"], @"Pass");
 }
 
-- (void)testQueryStringOnly
+- (void)testQueryParametersQueryStringOnly
 {
 	NSURL *testUrl = [NSURL URLWithString:@"?param1=Hello&param2=World"];
 	NSDictionary *parameters = [testUrl dm_QueryParametersDictionary];

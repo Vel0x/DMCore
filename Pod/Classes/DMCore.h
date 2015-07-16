@@ -15,4 +15,6 @@
 #include "NSMutableArray+DMCore.h"
 #include "NSString+DMCore.h"
 #include "NSURL+DMCore.h"
+#include "UIApplication+DMCore.h"
+#include "UIDevice+DMCore.h"
 #include "UIView+DMCore.h"
