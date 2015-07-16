@@ -13,8 +13,23 @@
 
 - (NSDictionary*)dm_QueryParametersDictionary
 {
-    [NSException dm_RaiseUnimplementedMethod];
-    return nil;
+	NSMutableDictionary *parametersDict = [[NSMutableDictionary alloc] init];
+	
+	NSString *queryString = [self query];
+	
+	NSArray *parameters = [queryString componentsSeparatedByString:@"&"];
+	
+	for (NSString *parameter in parameters)
+	{
+		NSArray *parts = [parameter componentsSeparatedByString:@"="];
+		
+		if ([parts count] == 2)
+		{
+			parametersDict[parts[0]] = parts[1];
+		}
+	}
+	
+    return parametersDict;
 }
 
 - (NSString*)dm_QueryParameterByName:(NSString*)name

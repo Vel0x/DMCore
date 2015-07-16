@@ -16,6 +16,9 @@
 /**
  *	@brief  Converts and returns the query parameters as a dictionary
  *
+ *	@discussion	This method has known issue with query strings with any html
+ *				encoded characters in query names or values.
+ *
  *	@return The query parameters as a dictionary
  */
 - (NSDictionary*)dm_QueryParametersDictionary;

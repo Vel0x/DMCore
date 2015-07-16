@@ -28,9 +28,31 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testSimple
 {
-	XCTAssert(YES, @"Pass");
+	NSURL *testUrl = [NSURL URLWithString:@"https://domainname.com/path?param1=Hello&param2=World"];
+	NSDictionary *parameters = [testUrl dm_QueryParametersDictionary];
+	XCTAssert([parameters count] == 2, @"Pass");
+	XCTAssert([parameters[@"param1"] isEqualToString:@"Hello"], @"Pass");
+	XCTAssert([parameters[@"param2"] isEqualToString:@"World"], @"Pass");
+}
+
+- (void)testHTMLCharacters
+{
+	NSURL *testUrl = [NSURL URLWithString:@"https://domainname.com/pa&amp;th?param1=Hello&param2=World"];
+	NSDictionary *parameters = [testUrl dm_QueryParametersDictionary];
+	XCTAssert([parameters count] == 2, @"Pass");
+	XCTAssert([parameters[@"param1"] isEqualToString:@"Hello"], @"Pass");
+	XCTAssert([parameters[@"param2"] isEqualToString:@"World"], @"Pass");
+}
+
+- (void)testQueryStringOnly
+{
+	NSURL *testUrl = [NSURL URLWithString:@"?param1=Hello&param2=World"];
+	NSDictionary *parameters = [testUrl dm_QueryParametersDictionary];
+	XCTAssert([parameters count] == 2, @"Pass");
+	XCTAssert([parameters[@"param1"] isEqualToString:@"Hello"], @"Pass");
+	XCTAssert([parameters[@"param2"] isEqualToString:@"World"], @"Pass");
 }
 
 @end
